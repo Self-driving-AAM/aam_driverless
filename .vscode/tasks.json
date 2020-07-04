@@ -1,0 +1,132 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Clean",
+			"type": "shell",
+			"command": "rm",
+			"args": [
+				"-rf",
+				"build/{,.[!.],..?}*",
+				"devel/{,.[!.],..?}*"
+			],
+			"presentation": {
+				"reveal": "silent",
+				"panel": "dedicated",
+				"focus": false,
+				"showReuseMessage": false,
+				"revealProblems": "onProblem",
+				"echo": false,
+				"clear": true
+			},
+			"runOptions": {
+				"instanceLimit": 1
+			},
+			"promptOnClose": true,
+			"detail": "Deletes the \"build\" and \"devel\" folders",
+			"problemMatcher": []
+		},
+		{
+			"label": "Gazebo",
+			"type": "shell",
+			"command": "source",
+			"args": [
+				"devel/setup.bash",
+				"&&",
+				"roslaunch",
+				"aamfsd_gazebo",
+				"${input:raceTrack}.launch"
+			],
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"focus": false,
+				"showReuseMessage": false,
+				"revealProblems": "onProblem",
+				"echo": false,
+				"clear": true,
+				"group": "run"
+			},
+			"runOptions": {
+				"instanceLimit": 1
+			},
+			"promptOnClose": true,
+			"detail": "Run the project on Gazebo with the selected race track",
+			"problemMatcher": [
+				"$catkin-gcc"
+			]
+		},
+		{
+			"label": "Control",
+			"type": "shell",
+			"command": "source",
+			"args": [
+				"devel/setup.bash",
+				"&&",
+				"roslaunch",
+				"robot_control",
+				"rqt_robot_control.launch"
+			],
+			"group": "test",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"focus": false,
+				"showReuseMessage": false,
+				"revealProblems": "onProblem",
+				"echo": false,
+				"clear": true,
+				"group": "run"
+			},
+			"runOptions": {
+				"instanceLimit": 1
+			},
+			"promptOnClose": true,
+			"detail": "Control the Car on Gazebo. Gazebo must be run first"
+		},
+		{
+			"label": "Build",
+			"type": "shell",
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"command": "catkin_make",
+			"presentation": {
+				"reveal": "silent",
+				"panel": "shared",
+				"focus": false,
+				"showReuseMessage": false,
+				"revealProblems": "onProblem",
+				"echo": false,
+				"clear": true
+			},
+			"runOptions": {
+				"instanceLimit": 1
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"promptOnClose": true,
+			"detail": "Builds the project"
+		}
+	],
+	"inputs": [
+		{
+			"type": "pickString",
+			"id": "raceTrack",
+			"description": "Select the race track you want to run on Gazebo",
+			"options": [
+				"empty",
+				"acceleration",
+				"skidpad",
+				"sprint17",
+				"small_track",
+				"big_track"
+			],
+			"default": "empty"
+		}
+	]
+}
