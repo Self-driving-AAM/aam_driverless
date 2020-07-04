@@ -71,8 +71,3 @@ roscd robot_control
 chmod +x nodes/twist_to_ackermannDrive.py
 ```
 Now rerun and have fun.
-
-
-
-g
-test
