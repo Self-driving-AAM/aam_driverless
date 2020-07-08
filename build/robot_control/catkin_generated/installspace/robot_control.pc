@@ -1,0 +1,8 @@
+prefix=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install
+
+Name: robot_control
+Description: Description of robot_control
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: ackermann_msgs

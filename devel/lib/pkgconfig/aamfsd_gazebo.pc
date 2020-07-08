@@ -1,0 +1,8 @@
+prefix=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel
+
+Name: aamfsd_gazebo
+Description: Description of aamfsd_gazebo
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
