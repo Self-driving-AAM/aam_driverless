@@ -1,23 +1,35 @@
+import cv2
 import pandas as pd # data analysis toolkit - create, read, update, delete datasets
-import numpy as np #matrix math
-from sklearn.model_selection import train_test_split #to split out training and testing data 
+from sklearn.model_selection import train_test_split #to split out training and testing data
 #keras is a high level wrapper on top of tensorflow (machine learning library)
 #The Sequential container is a linear stack of layers
 from keras.models import Sequential
-#popular optimization strategy that uses gradient descent 
+#popular optimization strategy that uses gradient descent
 from keras.optimizers import Adam
 #to save our model periodically as checkpoints for loading later
 from keras.callbacks import ModelCheckpoint
 #what types of layers do we want our model to have?
-from keras.layers import Lambda, Conv2D, MaxPooling2D, Dropout, Dense, Flatten
+from keras.layers import Lambda, Conv2D, MaxPooling2D, Dropout, Dense, Flatten, Input
 #helper class to define input shape and generate training images given image paths & steering angles
 from utils import INPUT_SHAPE, batch_generator
 #for command line arguments
 import argparse
 #for reading files
 import os
+import numpy as np #matrix math
+import os
+import tensorflow as tf
+from tensorflow.keras import layers
+from tensorflow.keras import Model
 
-#for debugging, allows for reproducible (deterministic) results 
+import pandas as pd  # data analysis toolkit - create, read, update, delete datasets
+import numpy as np  # matrix math
+from sklearn.model_selection import train_test_split  # to split out training and testing data
+# The Sequential container is a linear stack of layers
+from utils import INPUT_SHAPE, batch_generator, load_image
+# for reading files
+import os
+#for debugging, allows for reproducible (deterministic) results
 np.random.seed(0)
 
 
@@ -34,88 +46,62 @@ def load_data(args):
     #and our steering commands as our output data
     y = data_df['steering'].values
 
-    #now we can split the data into a training (80), testing(20), and validation set
-    #thanks scikit learn
-    X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=args.test_size, random_state=0)
 
-    return X_train, X_valid, y_train, y_valid
+    #X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=args.test_size, random_state=0)
+
+    #return X_train, X_valid, y_train, y_valid
+
+    return X,y
+
+
 
 
 def build_model(args):
-    """
-    NVIDIA model used
-    Image normalization to avoid saturation and make gradients work better.
-    Convolution: 5x5, filter: 24, strides: 2x2, activation: ELU
-    Convolution: 5x5, filter: 36, strides: 2x2, activation: ELU
-    Convolution: 5x5, filter: 48, strides: 2x2, activation: ELU
-    Convolution: 3x3, filter: 64, strides: 1x1, activation: ELU
-    Convolution: 3x3, filter: 64, strides: 1x1, activation: ELU
-    Drop out (0.5)
-    Fully connected: neurons: 100, activation: ELU
-    Fully connected: neurons: 50, activation: ELU
-    Fully connected: neurons: 10, activation: ELU
-    Fully connected: neurons: 1 (output)
-
-    # the convolution layers are meant to handle feature engineering
-    the fully connected layer for predicting the steering angle.
-    dropout avoids overfitting
-    ELU(Exponential linear unit) function takes care of the Vanishing gradient problem. 
-    """
+    activation = 'relu'
     model = Sequential()
-    model.add(Lambda(lambda x: x/127.5-1.0, input_shape=INPUT_SHAPE))
-    model.add(Conv2D(24, 5, 5, activation='elu', subsample=(2, 2)))
-    model.add(Conv2D(36, 5, 5, activation='elu', subsample=(2, 2)))
-    model.add(Conv2D(48, 5, 5, activation='elu', subsample=(2, 2)))
-    model.add(Conv2D(64, 3, 3, activation='elu'))
-    model.add(Conv2D(64, 3, 3, activation='elu'))
-    model.add(Dropout(args.keep_prob))
-    model.add(Flatten())
-    model.add(Dense(100, activation='elu'))
-    model.add(Dense(50, activation='elu'))
-    model.add(Dense(10, activation='elu'))
-    model.add(Dense(1))
+    model.add(Input(shape=(1)))
+    model.add(Dense(4, activation='relu'))
+    model.add(Dense(3, activation='relu'))
+    model.add(Dense(2, activation='relu'))
+    model.add(Dense(1,activation="sigmoid"))
     model.summary()
 
     return model
 
+def norm(data):
+    return (data - -3.0) * (1.0 - 0.0) / (3.0 - -3.0) + 0
+def norm2(data):
+    return norm((data - 0) * (3 - -3) / (1 - 0) + -3)
+def train_model(model, args, x, y):
+    y=np.array([norm(float(x)) for x in y])
+    print("data =",len(x))
+    print("  ",max(y)   , max(x))
+    print("  ",min(y)   , min(x))
+    print(y[1000:1020])
+    print(x[1000:1020])
+    print("  ",max(y)   , max(x))
+    print("  ",min(y)   , min(x))
 
-def train_model(model, args, X_train, X_valid, y_train, y_valid):
-    """
-    Train the model
-    """
-    #Saves the model after every epoch.
-    #quantity to monitor, verbosity i.e logging mode (0 or 1), 
-    #if save_best_only is true the latest best model according to the quantity monitored will not be overwritten.
-    #mode: one of {auto, min, max}. If save_best_only=True, the decision to overwrite the current save file is
-    # made based on either the maximization or the minimization of the monitored quantity. For val_acc, 
-    #this should be max, for val_loss this should be min, etc. In auto mode, the direction is automatically
-    # inferred from the name of the monitored quantity.
-    checkpoint = ModelCheckpoint('model-{epoch:03d}.h5',
-                                 monitor='val_loss',
+    import matplotlib.pyplot as plt
+
+
+    plt.plot(x[1000:1020])
+    plt.show()
+
+
+
+    print("val =",len(y))
+    checkpoint = ModelCheckpoint('models/model-{epoch:03d}.h5',
+                                 monitor='accuracy',
                                  verbose=0,
-                                 save_best_only=args.save_best_only,
+                                 save_best_only=True,
                                  mode='auto')
+    model.compile(loss=tf.keras.losses.MAE, optimizer='adam', metrics=['accuracy'])
+    print("sahape ", x.shape)
+    model.fit(x=x,y=y,
+            epochs=1000,
 
-    #calculate the difference between expected steering angle and actual steering angle
-    #square the difference
-    #add up all those differences for as many data points as we have
-    #divide by the number of them
-    #that value is our mean squared error! this is what we want to minimize via
-    #gradient descent
-    model.compile(loss='mean_squared_error', optimizer=Adam(lr=args.learning_rate))
-
-    #Fits the model on data generated batch-by-batch by a Python generator.
-
-    #The generator is run in parallel to the model, for efficiency. 
-    #For instance, this allows you to do real-time data augmentation on images on CPU in 
-    #parallel to training your model on GPU.
-    #so we reshape our data into their appropriate batches and train our model simulatenously
-    model.fit_generator(batch_generator(args.data_dir, X_train, y_train, args.batch_size, True),
-                        args.samples_per_epoch,
-                        args.nb_epoch,
-                        max_q_size=1,
-                        validation_data=batch_generator(args.data_dir, X_valid, y_valid, args.batch_size, False),
-                        nb_val_samples=len(X_valid),
+            steps_per_epoch=2000,
                         callbacks=[checkpoint],
                         verbose=1)
 
@@ -133,10 +119,10 @@ def main():
     Load train/validation data set and train the model
     """
     parser = argparse.ArgumentParser(description='Behavioral Cloning Training Program')
-    parser.add_argument('-d', help='data directory',        dest='data_dir',          type=str,   default='data')
+    parser.add_argument('-d', help='data directory',        dest='data_dir',          type=str,   default='d')
     parser.add_argument('-t', help='test size fraction',    dest='test_size',         type=float, default=0.2)
-    parser.add_argument('-k', help='drop out probability',  dest='keep_prob',         type=float, default=0.5)
-    parser.add_argument('-n', help='number of epochs',      dest='nb_epoch',          type=int,   default=10)
+    parser.add_argument('-k', help='drop out probability',  dest='keep_prob',         type=float, default=0.2)
+    parser.add_argument('-n', help='number of epochs',      dest='nb_epoch',          type=int,   default=100)
     parser.add_argument('-s', help='samples per epoch',     dest='samples_per_epoch', type=int,   default=20000)
     parser.add_argument('-b', help='batch size',            dest='batch_size',        type=int,   default=40)
     parser.add_argument('-o', help='save best models only', dest='save_best_only',    type=s2b,   default='true')
@@ -154,11 +140,40 @@ def main():
     #load data
     data = load_data(args)
     #build model
+
+
+
+    local_weights_file = 'model(1).h5'
+
+    model = tf.keras.models.load_model(local_weights_file)
+    for layer in model.layers[:-3]:
+        layer.trainable = False
+
+    # (66, 200, 3)
+
+    model.summary()
+
+
+    img=np.array([load_image("d",d) for d in data[0]])[..., ::-1]/255
+    print(len(img))
+    # Window name in which image is displayed
+    window_name = 'image'
+
+    # Using cv2.imshow() method
+    # Displaying the image
+
+
+    # closing all open windows
+    print(img.shape)
+    x=model.predict(img)
+    print(data[1][0])
+    #cv2.imshow('window', img[0])
+
+    #cv2.waitKey(0)  # waits until a key is pressed
+    #cv2.destroyAllWindows()
     model = build_model(args)
-    #train model on data, it saves as model.h5 
-    train_model(model, args, *data)
-
-
+    #train model on data, it saves as model.h5
+    train_model(model, args, x,data[1])
 if __name__ == '__main__':
     main()
 
