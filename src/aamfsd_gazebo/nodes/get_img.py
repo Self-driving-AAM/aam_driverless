@@ -6,7 +6,6 @@ import rospy
 from sensor_msgs.msg import CompressedImage
 from ackermann_msgs.msg import AckermannDriveStamped
 from cv_bridge import CvBridge, CvBridgeError
-import tensorflow as tf
 import random
 from datetime import datetime
 
@@ -50,22 +49,19 @@ class ImageOverlay:
         # datetime object containing current date and time
         now = datetime.now()
 	self.i = now.strftime("%H:%M:%S")
-        print("now =", str(self.number) + "         with id =  "+str(self.i))
-	self.number+=1
+
+	my_name="youssf"
         # dd/mm/YY H:M:S
         
-        image =self.overlay()
-        # from 1 dim to 3
-        image = (np.reshape(image, image.shape)).astype(float)
-        # resize - cv2. we don't need crop (did it before)
-        image_BGR = cv2.resize(image, (200, 66))
-        # convert to RGB
-        image = image_BGR[..., ::-1]
+        image =self.overlay()[210:,:]
+
 	if(self.temp != str(self.i)):
             with open("data_index.txt", "a") as myfile:
-	    	cv2.imwrite("data/"+self.i+'.jpg',image)
-            	myfile.write("data/"+self.i+'.jpg,'+str(drive.steering_angle)+"\n")
+	    	cv2.imwrite("data/"+my_name+self.i+'.jpg',image)
+            	myfile.write("data/"+my_name+self.i+'.jpg,'+str(drive.steering_angle)+"\n")
+        	print("now =", str(self.number) + "         with id =  "+str(self.i)+"    shape"+str(image.shape))
 		self.temp=str(self.i)
+		self.number+=1
         ack_cmd.drive = drive
         self.publisher.publish(ack_cmd)
     def run(self):
@@ -81,49 +77,21 @@ class ImageOverlay:
         rate = rospy.Rate(3)  # default 3 Hz
 
         #print("Running camera overlay in overlay/compressed")
-        with graph.as_default():
-            with tf.Session(graph=graph) as sess:
-                with tf.gfile.FastGFile('./model_tf.pb', 'rb') as model_file:
-                    graph_def = tf.GraphDef()
-                    graph_def.ParseFromString(model_file.read())
+        while(1):
+
                 # init
                 # choose ROI
                 roi_x = 66
                 roi_y = 200
-                input_var = tf.placeholder("float32", [1, roi_x, roi_y, 3])
-                [output_image] = tf.import_graph_def(graph_def, input_map={'input_1:0': input_var},
-                                             return_elements=['output/Sigmoid:0'],
-                                             name='')
                 while True:
                     startTime = time.time()
                     image =self.overlay()
                     # from 1 dim to 3
-
-
-                    image = (np.reshape(image, image.shape)).astype(float)
-                    # resize - cv2. we don't need crop (did it before)
-                    image_BGR = cv2.resize(image, (roi_y, roi_x))
-                    # convert to RGB
-                    image = image_BGR[..., ::-1]
-                    # normalization
-                    image /= 255.0
-                    img = np.expand_dims(image, axis=0)
-                    # inference
-                    pred = sess.run(output_image, feed_dict={input_var: img})
-                    steering_pred = int(((((pred[0][0]) - 0.5)*2) + 0.5) * 150)
-
-                    steering_raw = int(min(255, steering_pred))
-
-
-                    self.asteering_raw=steering_pred
-
-
-                    # show on screen
                     cv2.imshow('inference (q to exit)', self.overlay())
                     if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
                     # send steering to serial port
-                    steering_str = '.' + str(steering_raw) + '    \r\n'
+
 
                     endTime = time.time()
                     # calculate fps
@@ -149,7 +117,7 @@ if __name__ == "__main__":
     fps_q = []
 
     # graph and session
-    graph = tf.Graph()
+
     img = ImageOverlay()
     img.run()
 
