@@ -50,5 +50,10 @@
   />
 
 
-
+  <node 
+    name="orb_helper"
+    pkg="aamfsd_gazebo"
+    type="orb_helper.py"
+    output="screen"
+  />
 </launch>
