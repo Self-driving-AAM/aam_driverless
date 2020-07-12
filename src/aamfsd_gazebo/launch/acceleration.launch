@@ -49,7 +49,6 @@
     output="screen"
   />
 
-
   <node 
     name="orb_helper"
     pkg="aamfsd_gazebo"
