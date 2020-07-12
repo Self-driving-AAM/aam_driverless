@@ -2,8 +2,8 @@
   <node name="orb_slam2_stereo" pkg="orb_slam2_ros"
       type="orb_slam2_ros_stereo" output="screen">
 
-       <remap from="image_left/image_color_rect" to="/cam_front/left/image_rect_color" />
-       <remap from="image_right/image_color_rect" to="/cam_front/right/image_rect_color" />
+       <remap from="/camera/left/image_raw" to="/cam_front/left/image_rect_color" />
+       <remap from="/camera/right/image_raw" to="/cam_front/right/image_rect_color" />
 
        <param name="publish_pointcloud" type="bool" value="true" />
        <param name="publish_pose" type="bool" value="true" />
