@@ -1,0 +1,8 @@
+prefix=/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs
+
+Name: octomap_msgs
+Description: Description of octomap_msgs
+Version: 0.3.5
+Cflags: -I/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/include -I/home/fayo98/aam_driverless-ai/src/octomap_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime geometry_msgs std_msgs

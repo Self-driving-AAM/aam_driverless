@@ -1,0 +1,4 @@
+Symlinking /home/fayo98/aam_driverless-ai/devel/lib/liboctomap_ros.so
+Symlinking /home/fayo98/aam_driverless-ai/devel/lib/pkgconfig/octomap_ros.pc
+Symlinking /home/fayo98/aam_driverless-ai/devel/share/octomap_ros/cmake/octomap_rosConfig-version.cmake
+Symlinking /home/fayo98/aam_driverless-ai/devel/share/octomap_ros/cmake/octomap_rosConfig.cmake

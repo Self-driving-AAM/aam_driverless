@@ -1,0 +1,1 @@
+/home/fayo98/aam_driverless-ai/devel/.private/catkin_tools_prebuild/local_setup.bash
