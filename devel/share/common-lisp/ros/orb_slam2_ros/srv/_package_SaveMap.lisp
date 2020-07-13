@@ -1,1 +1,6 @@
-/home/fayo98/aam_driverless-ai/devel/.private/orb_slam2_ros/share/common-lisp/ros/orb_slam2_ros/srv/_package_SaveMap.lisp
+(cl:in-package orb_slam2_ros-srv)
+(cl:export '(NAME-VAL
+          NAME
+          SUCCESS-VAL
+          SUCCESS
+))

@@ -1,1 +1,8 @@
-/home/fayo98/aam_driverless-ai/devel/.private/orb_slam2_ros/share/gennodejs/ros/orb_slam2_ros/srv/_index.js
+
+"use strict";
+
+let SaveMap = require('./SaveMap.js')
+
+module.exports = {
+  SaveMap: SaveMap,
+};

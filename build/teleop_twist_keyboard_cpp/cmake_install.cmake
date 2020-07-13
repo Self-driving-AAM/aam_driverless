@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: /home/fayo98/aam_driverless-ai/src/teleop_twist_keyboard_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/home/fayo98/aam_driverless-ai/install")
+=======
+# Install script for directory: /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/teleop_twist_keyboard_cpp
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install")
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,6 +40,7 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+<<<<<<< HEAD
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -154,3 +163,25 @@ string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 file(WRITE "/home/fayo98/aam_driverless-ai/build/teleop_twist_keyboard_cpp/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+=======
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/build/teleop_twist_keyboard_cpp/catkin_generated/installspace/teleop_twist_keyboard_cpp.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/teleop_twist_keyboard_cpp/cmake" TYPE FILE FILES
+    "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/build/teleop_twist_keyboard_cpp/catkin_generated/installspace/teleop_twist_keyboard_cppConfig.cmake"
+    "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/build/teleop_twist_keyboard_cpp/catkin_generated/installspace/teleop_twist_keyboard_cppConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/teleop_twist_keyboard_cpp" TYPE FILE FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/teleop_twist_keyboard_cpp/package.xml")
+endif()
+
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403

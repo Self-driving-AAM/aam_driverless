@@ -1,1 +1,12 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/common-lisp/ros/octomap_msgs/msg/_package_Octomap.lisp
+(cl:in-package octomap_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          BINARY-VAL
+          BINARY
+          ID-VAL
+          ID
+          RESOLUTION-VAL
+          RESOLUTION
+          DATA-VAL
+          DATA
+))

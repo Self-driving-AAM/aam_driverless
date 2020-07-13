@@ -1,1 +1,10 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/gennodejs/ros/octomap_msgs/srv/_index.js
+
+"use strict";
+
+let BoundingBoxQuery = require('./BoundingBoxQuery.js')
+let GetOctomap = require('./GetOctomap.js')
+
+module.exports = {
+  BoundingBoxQuery: BoundingBoxQuery,
+  GetOctomap: GetOctomap,
+};

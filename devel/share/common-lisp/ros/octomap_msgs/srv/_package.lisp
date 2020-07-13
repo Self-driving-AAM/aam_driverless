@@ -1,1 +1,15 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/common-lisp/ros/octomap_msgs/srv/_package.lisp
+(cl:defpackage octomap_msgs-srv
+  (:use )
+  (:export
+   "BOUNDINGBOXQUERY"
+   "<BOUNDINGBOXQUERY-REQUEST>"
+   "BOUNDINGBOXQUERY-REQUEST"
+   "<BOUNDINGBOXQUERY-RESPONSE>"
+   "BOUNDINGBOXQUERY-RESPONSE"
+   "GETOCTOMAP"
+   "<GETOCTOMAP-REQUEST>"
+   "GETOCTOMAP-REQUEST"
+   "<GETOCTOMAP-RESPONSE>"
+   "GETOCTOMAP-RESPONSE"
+  ))
+

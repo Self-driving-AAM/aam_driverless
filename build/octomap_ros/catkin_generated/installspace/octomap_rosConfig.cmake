@@ -67,14 +67,23 @@ set(octomap_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
+<<<<<<< HEAD
   set(octomap_ros_SOURCE_PREFIX /home/fayo98/aam_driverless-ai/src/octomap_ros)
   set(octomap_ros_DEVEL_PREFIX /home/fayo98/aam_driverless-ai/devel/.private/octomap_ros)
+=======
+  set(octomap_ros_SOURCE_PREFIX /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/octomap_ros)
+  set(octomap_ros_DEVEL_PREFIX /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel)
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
   set(octomap_ros_INSTALL_PREFIX "")
   set(octomap_ros_PREFIX ${octomap_ros_DEVEL_PREFIX})
 else()
   set(octomap_ros_SOURCE_PREFIX "")
   set(octomap_ros_DEVEL_PREFIX "")
+<<<<<<< HEAD
   set(octomap_ros_INSTALL_PREFIX /home/fayo98/aam_driverless-ai/install)
+=======
+  set(octomap_ros_INSTALL_PREFIX /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install)
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
   set(octomap_ros_PREFIX ${octomap_ros_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +100,15 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(octomap_ros_FOUND_CATKIN_PROJECT TRUE)
 
+<<<<<<< HEAD
 if(NOT "include;/opt/ros/kinetic/include " STREQUAL " ")
   set(octomap_ros_INCLUDE_DIRS "")
   set(_include_dirs "include;/opt/ros/kinetic/include")
+=======
+if(NOT "include;/opt/ros/melodic/include " STREQUAL " ")
+  set(octomap_ros_INCLUDE_DIRS "")
+  set(_include_dirs "include;/opt/ros/melodic/include")
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
   if(NOT "https://github.com/OctoMap/octomap_ros/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/OctoMap/octomap_ros/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/octomap_ros " STREQUAL " ")
@@ -116,7 +131,11 @@ if(NOT "include;/opt/ros/kinetic/include " STREQUAL " ")
   endforeach()
 endif()
 
+<<<<<<< HEAD
 set(libraries "octomap_ros;/opt/ros/kinetic/lib/liboctomap.so;/opt/ros/kinetic/lib/liboctomath.so")
+=======
+set(libraries "octomap_ros;/opt/ros/melodic/lib/liboctomap.so;/opt/ros/melodic/lib/liboctomath.so")
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -154,7 +173,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD
     foreach(path /home/fayo98/aam_driverless-ai/install/lib;/home/fayo98/aam_driverless-ai/devel/lib;/opt/ros/kinetic/lib)
+=======
+    foreach(path /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install/lib;/opt/ros/melodic/lib)
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

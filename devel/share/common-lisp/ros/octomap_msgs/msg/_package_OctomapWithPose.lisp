@@ -1,1 +1,8 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/common-lisp/ros/octomap_msgs/msg/_package_OctomapWithPose.lisp
+(cl:in-package octomap_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          ORIGIN-VAL
+          ORIGIN
+          OCTOMAP-VAL
+          OCTOMAP
+))

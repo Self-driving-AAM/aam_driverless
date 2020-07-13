@@ -1,1 +1,7 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/gennodejs/ros/octomap_msgs/_index.js
+
+"use strict";
+
+module.exports = {
+  msg: require('./msg/_index.js'),
+  srv: require('./srv/_index.js')
+};

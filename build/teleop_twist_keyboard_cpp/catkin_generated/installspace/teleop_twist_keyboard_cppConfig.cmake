@@ -67,14 +67,23 @@ set(teleop_twist_keyboard_cpp_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
+<<<<<<< HEAD
   set(teleop_twist_keyboard_cpp_SOURCE_PREFIX /home/fayo98/aam_driverless-ai/src/teleop_twist_keyboard_cpp)
   set(teleop_twist_keyboard_cpp_DEVEL_PREFIX /home/fayo98/aam_driverless-ai/devel/.private/teleop_twist_keyboard_cpp)
+=======
+  set(teleop_twist_keyboard_cpp_SOURCE_PREFIX /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/teleop_twist_keyboard_cpp)
+  set(teleop_twist_keyboard_cpp_DEVEL_PREFIX /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel)
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
   set(teleop_twist_keyboard_cpp_INSTALL_PREFIX "")
   set(teleop_twist_keyboard_cpp_PREFIX ${teleop_twist_keyboard_cpp_DEVEL_PREFIX})
 else()
   set(teleop_twist_keyboard_cpp_SOURCE_PREFIX "")
   set(teleop_twist_keyboard_cpp_DEVEL_PREFIX "")
+<<<<<<< HEAD
   set(teleop_twist_keyboard_cpp_INSTALL_PREFIX /home/fayo98/aam_driverless-ai/install)
+=======
+  set(teleop_twist_keyboard_cpp_INSTALL_PREFIX /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install)
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
   set(teleop_twist_keyboard_cpp_PREFIX ${teleop_twist_keyboard_cpp_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +163,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD
     foreach(path /home/fayo98/aam_driverless-ai/install/lib;/home/fayo98/aam_driverless-ai/devel/lib;/opt/ros/kinetic/lib)
+=======
+    foreach(path /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install/lib;/opt/ros/melodic/lib)
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

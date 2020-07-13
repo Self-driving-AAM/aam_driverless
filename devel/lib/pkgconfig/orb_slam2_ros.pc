@@ -1,1 +1,8 @@
-/home/fayo98/aam_driverless-ai/devel/.private/orb_slam2_ros/lib/pkgconfig/orb_slam2_ros.pc
+prefix=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel
+
+Name: orb_slam2_ros
+Description: Description of orb_slam2_ros
+Version: 0.0.1
+Cflags: -I/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel/include
+Libs: -L${prefix}/lib -l{PROJECT_NAME} -llibDBoW2 -llibg2o
+Requires: roscpp rospy std_msgs cv_bridge image_transport tf sensor_msgs dynamic_reconfigure message_runtime

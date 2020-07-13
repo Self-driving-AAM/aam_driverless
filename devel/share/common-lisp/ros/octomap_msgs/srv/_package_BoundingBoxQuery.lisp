@@ -1,1 +1,6 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/common-lisp/ros/octomap_msgs/srv/_package_BoundingBoxQuery.lisp
+(cl:in-package octomap_msgs-srv)
+(cl:export '(MIN-VAL
+          MIN
+          MAX-VAL
+          MAX
+))

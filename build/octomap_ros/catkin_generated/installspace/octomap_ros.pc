@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 prefix=/home/fayo98/aam_driverless-ai/install
+=======
+prefix=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 
 Name: octomap_ros
 Description: Description of octomap_ros
 Version: 0.4.1
+<<<<<<< HEAD
 Cflags: -I${prefix}/include -I/opt/ros/kinetic/include
 Libs: -L${prefix}/lib -loctomap_ros /opt/ros/kinetic/lib/liboctomap.so /opt/ros/kinetic/lib/liboctomath.so
+=======
+Cflags: -I${prefix}/include -I/opt/ros/melodic/include
+Libs: -L${prefix}/lib -loctomap_ros /opt/ros/melodic/lib/liboctomap.so /opt/ros/melodic/lib/liboctomath.so
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 Requires: octomap_msgs sensor_msgs tf

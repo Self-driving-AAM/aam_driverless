@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: /home/fayo98/aam_driverless-ai/src/aamfsd_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/home/fayo98/aam_driverless-ai/install")
+=======
+# Install script for directory: /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/aamfsd_gazebo
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install")
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,6 +40,7 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
+<<<<<<< HEAD
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -166,3 +175,37 @@ string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 file(WRITE "/home/fayo98/aam_driverless-ai/build/aamfsd_gazebo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+=======
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/build/aamfsd_gazebo/catkin_generated/installspace/aamfsd_gazebo.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aamfsd_gazebo/cmake" TYPE FILE FILES
+    "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/build/aamfsd_gazebo/catkin_generated/installspace/aamfsd_gazeboConfig.cmake"
+    "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/build/aamfsd_gazebo/catkin_generated/installspace/aamfsd_gazeboConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aamfsd_gazebo" TYPE FILE FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/aamfsd_gazebo/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/aamfsd_gazebo" TYPE PROGRAM FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/aamfsd_gazebo/nodes/ground_truth_republisher.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aamfsd_gazebo/launch" TYPE DIRECTORY FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/aamfsd_gazebo/launch/" FILES_MATCHING REGEX "/[^/]*\\.launch$" REGEX "/[^/]*\\.machine$" REGEX "/[^/]*\\.yaml$" REGEX "/[^/]*\\.urdf$")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/aamfsd_gazebo/config" TYPE DIRECTORY FILES "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/aamfsd_gazebo/config/" FILES_MATCHING REGEX "/[^/]*\\.yaml$")
+endif()
+
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403

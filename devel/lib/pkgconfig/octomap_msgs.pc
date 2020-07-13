@@ -1,1 +1,8 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/lib/pkgconfig/octomap_msgs.pc
+prefix=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel
+
+Name: octomap_msgs
+Description: Description of octomap_msgs
+Version: 0.3.5
+Cflags: -I/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel/include -I/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/octomap_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime geometry_msgs std_msgs

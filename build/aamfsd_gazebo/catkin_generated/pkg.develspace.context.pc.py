@@ -4,5 +4,9 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "aamfsd_gazebo"
+<<<<<<< HEAD
 PROJECT_SPACE_DIR = "/home/fayo98/aam_driverless-ai/devel/.private/aamfsd_gazebo"
+=======
+PROJECT_SPACE_DIR = "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel"
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 PROJECT_VERSION = "0.1.0"

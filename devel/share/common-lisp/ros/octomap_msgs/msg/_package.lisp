@@ -1,1 +1,9 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/common-lisp/ros/octomap_msgs/msg/_package.lisp
+(cl:defpackage octomap_msgs-msg
+  (:use )
+  (:export
+   "<OCTOMAP>"
+   "OCTOMAP"
+   "<OCTOMAPWITHPOSE>"
+   "OCTOMAPWITHPOSE"
+  ))
+

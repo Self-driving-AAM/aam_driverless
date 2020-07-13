@@ -1,1 +1,10 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/gennodejs/ros/octomap_msgs/msg/_index.js
+
+"use strict";
+
+let Octomap = require('./Octomap.js');
+let OctomapWithPose = require('./OctomapWithPose.js');
+
+module.exports = {
+  Octomap: Octomap,
+  OctomapWithPose: OctomapWithPose,
+};

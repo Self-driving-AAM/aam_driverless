@@ -1,0 +1,2 @@
+aamfsd_description:aamfsd_gazebo:octomap_mapping/octomap_mapping:octomap_mapping/octomap_server:octomap_msgs:octomap_ros:orb_slam_2_ros:robot_control:teleop_twist_keyboard_cpp
+-DCATKIN_DEVEL_PREFIX=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/devel -DCMAKE_INSTALL_PREFIX=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install -G Unix Makefiles

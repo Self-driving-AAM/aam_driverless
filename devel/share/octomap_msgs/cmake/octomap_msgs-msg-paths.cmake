@@ -1,1 +1,4 @@
-/home/fayo98/aam_driverless-ai/devel/.private/octomap_msgs/share/octomap_msgs/cmake/octomap_msgs-msg-paths.cmake
+# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
+
+set(octomap_msgs_MSG_INCLUDE_DIRS "/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/octomap_msgs/msg")
+set(octomap_msgs_MSG_DEPENDENCIES std_msgs;geometry_msgs)
