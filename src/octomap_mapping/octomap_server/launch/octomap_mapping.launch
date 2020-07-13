@@ -17,6 +17,7 @@
 		<param name="sensor_model/max_range" value="5.0" />
 		
 		<!-- data source to integrate (PointCloud2) -->
+
 		<remap from="cloud_in" to="/orb_slam2_stereo/map_points" />
 	
 	</node>

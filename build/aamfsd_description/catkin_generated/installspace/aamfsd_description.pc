@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+prefix=/home/fayo98/aam_driverless-ai/install
+=======
 prefix=/home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/install
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 
 Name: aamfsd_description
 Description: Description of aamfsd_description

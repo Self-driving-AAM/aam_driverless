@@ -1,0 +1,4 @@
+Symlinking /home/fayo98/aam_driverless-ai/devel/lib/pkgconfig/robot_control.pc
+Symlinking /home/fayo98/aam_driverless-ai/devel/lib/robot_control/robot_control_node
+Symlinking /home/fayo98/aam_driverless-ai/devel/share/robot_control/cmake/robot_controlConfig.cmake
+Symlinking /home/fayo98/aam_driverless-ai/devel/share/robot_control/cmake/robot_controlConfig-version.cmake

@@ -1,0 +1,6 @@
+devel_space: /home/fayo98/aam_driverless-ai/devel
+install: false
+install_space: /home/fayo98/aam_driverless-ai/install
+profile: default
+source_space: /home/fayo98/aam_driverless-ai/src
+workspace: /home/fayo98/aam_driverless-ai

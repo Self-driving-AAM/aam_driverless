@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+=======
 #IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +10,11 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
+/home/fayo98/aam_driverless-ai/src/robot_control/src/robot_control.cpp
+=======
 /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/robot_control/src/robot_control.cpp
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/ros.h
 -
 sensor_msgs/JointState.h
@@ -22,6 +30,19 @@ nav_msgs/Odometry.h
 ackermann_msgs/AckermannDriveStamped.h
 -
 diagnostic_msgs/DiagnosticStatus.h
+<<<<<<< HEAD
+/home/fayo98/aam_driverless-ai/src/robot_control/src/diagnostic_msgs/DiagnosticStatus.h
+diagnostic_updater/diagnostic_updater.h
+/home/fayo98/aam_driverless-ai/src/robot_control/src/diagnostic_updater/diagnostic_updater.h
+diagnostic_updater/update_functions.h
+/home/fayo98/aam_driverless-ai/src/robot_control/src/diagnostic_updater/update_functions.h
+diagnostic_updater/DiagnosticStatusWrapper.h
+/home/fayo98/aam_driverless-ai/src/robot_control/src/diagnostic_updater/DiagnosticStatusWrapper.h
+diagnostic_updater/publisher.h
+/home/fayo98/aam_driverless-ai/src/robot_control/src/diagnostic_updater/publisher.h
+
+/opt/ros/kinetic/include/ackermann_msgs/AckermannDrive.h
+=======
 /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/robot_control/src/diagnostic_msgs/DiagnosticStatus.h
 diagnostic_updater/diagnostic_updater.h
 /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/robot_control/src/diagnostic_updater/diagnostic_updater.h
@@ -33,6 +54,7 @@ diagnostic_updater/publisher.h
 /home/youssef/Desktop/aam/aamfsd_orb2_v3_ws/src/robot_control/src/diagnostic_updater/publisher.h
 
 /opt/ros/melodic/include/ackermann_msgs/AckermannDrive.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -48,7 +70,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ackermann_msgs/AckermannDriveStamped.h
+=======
 /opt/ros/melodic/include/ackermann_msgs/AckermannDriveStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -68,7 +94,11 @@ std_msgs/Header.h
 ackermann_msgs/AckermannDrive.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_msgs/DiagnosticArray.h
+=======
 /opt/ros/melodic/include/diagnostic_msgs/DiagnosticArray.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -88,7 +118,11 @@ std_msgs/Header.h
 diagnostic_msgs/DiagnosticStatus.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_msgs/DiagnosticStatus.h
+=======
 /opt/ros/melodic/include/diagnostic_msgs/DiagnosticStatus.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -106,7 +140,11 @@ ros/message_operations.h
 diagnostic_msgs/KeyValue.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_msgs/KeyValue.h
+=======
 /opt/ros/melodic/include/diagnostic_msgs/KeyValue.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -122,7 +160,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_updater/DiagnosticStatusWrapper.h
+=======
 /opt/ros/melodic/include/diagnostic_updater/DiagnosticStatusWrapper.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 vector
 -
 string
@@ -134,11 +176,19 @@ stdarg.h
 cstdio
 -
 ros/ros.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_updater/ros/ros.h
+diagnostic_msgs/DiagnosticStatus.h
+/opt/ros/kinetic/include/diagnostic_updater/diagnostic_msgs/DiagnosticStatus.h
+
+/opt/ros/kinetic/include/diagnostic_updater/diagnostic_updater.h
+=======
 /opt/ros/melodic/include/diagnostic_updater/ros/ros.h
 diagnostic_msgs/DiagnosticStatus.h
 /opt/ros/melodic/include/diagnostic_updater/diagnostic_msgs/DiagnosticStatus.h
 
 /opt/ros/melodic/include/diagnostic_updater/diagnostic_updater.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 stdexcept
 -
 vector
@@ -146,6 +196,19 @@ vector
 string
 -
 ros/node_handle.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_updater/ros/node_handle.h
+ros/this_node.h
+/opt/ros/kinetic/include/diagnostic_updater/ros/this_node.h
+diagnostic_msgs/DiagnosticArray.h
+/opt/ros/kinetic/include/diagnostic_updater/diagnostic_msgs/DiagnosticArray.h
+diagnostic_updater/DiagnosticStatusWrapper.h
+/opt/ros/kinetic/include/diagnostic_updater/diagnostic_updater/DiagnosticStatusWrapper.h
+boost/thread.hpp
+-
+
+/opt/ros/kinetic/include/diagnostic_updater/publisher.h
+=======
 /opt/ros/melodic/include/diagnostic_updater/ros/node_handle.h
 ros/this_node.h
 /opt/ros/melodic/include/diagnostic_updater/ros/this_node.h
@@ -157,6 +220,7 @@ boost/thread.hpp
 -
 
 /opt/ros/melodic/include/diagnostic_updater/publisher.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/publisher.h
 -
 ros/subscription.h
@@ -164,13 +228,21 @@ ros/subscription.h
 diagnostic_updater/update_functions.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/diagnostic_updater/update_functions.h
+=======
 /opt/ros/melodic/include/diagnostic_updater/update_functions.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 diagnostic_updater/diagnostic_updater.h
 -
 math.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Point.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Point.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -186,7 +258,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/PointStamped.h
+=======
 /opt/ros/melodic/include/geometry_msgs/PointStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -206,7 +282,11 @@ std_msgs/Header.h
 geometry_msgs/Point.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Pose.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Pose.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -226,7 +306,11 @@ geometry_msgs/Point.h
 geometry_msgs/Quaternion.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/PoseStamped.h
+=======
 /opt/ros/melodic/include/geometry_msgs/PoseStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -246,7 +330,11 @@ std_msgs/Header.h
 geometry_msgs/Pose.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/PoseWithCovariance.h
+=======
 /opt/ros/melodic/include/geometry_msgs/PoseWithCovariance.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -264,7 +352,11 @@ ros/message_operations.h
 geometry_msgs/Pose.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Quaternion.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -280,7 +372,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/QuaternionStamped.h
+=======
 /opt/ros/melodic/include/geometry_msgs/QuaternionStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -300,7 +396,11 @@ std_msgs/Header.h
 geometry_msgs/Quaternion.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Transform.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Transform.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -320,7 +420,11 @@ geometry_msgs/Vector3.h
 geometry_msgs/Quaternion.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/TransformStamped.h
+=======
 /opt/ros/melodic/include/geometry_msgs/TransformStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -340,7 +444,11 @@ std_msgs/Header.h
 geometry_msgs/Transform.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Twist.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Twist.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -360,7 +468,11 @@ geometry_msgs/Vector3.h
 geometry_msgs/Vector3.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/TwistStamped.h
+=======
 /opt/ros/melodic/include/geometry_msgs/TwistStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -380,7 +492,11 @@ std_msgs/Header.h
 geometry_msgs/Twist.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/TwistWithCovariance.h
+=======
 /opt/ros/melodic/include/geometry_msgs/TwistWithCovariance.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -398,7 +514,11 @@ ros/message_operations.h
 geometry_msgs/Twist.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Vector3.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Vector3.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -414,7 +534,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/geometry_msgs/Vector3Stamped.h
+=======
 /opt/ros/melodic/include/geometry_msgs/Vector3Stamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -434,7 +558,11 @@ std_msgs/Header.h
 geometry_msgs/Vector3.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/nav_msgs/Odometry.h
+=======
 /opt/ros/melodic/include/nav_msgs/Odometry.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -456,6 +584,33 @@ geometry_msgs/PoseWithCovariance.h
 geometry_msgs/TwistWithCovariance.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/advertise_options.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/message_traits.h
+/opt/ros/kinetic/include/ros/ros/message_traits.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+
+/opt/ros/kinetic/include/ros/advertise_service_options.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/service_callback_helper.h
+/opt/ros/kinetic/include/ros/ros/service_callback_helper.h
+ros/service_traits.h
+/opt/ros/kinetic/include/ros/ros/service_traits.h
+ros/message_traits.h
+/opt/ros/kinetic/include/ros/ros/message_traits.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+
+/opt/ros/kinetic/include/ros/assert.h
+ros/console.h
+/opt/ros/kinetic/include/ros/ros/console.h
+ros/static_assert.h
+/opt/ros/kinetic/include/ros/ros/static_assert.h
+=======
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
@@ -481,11 +636,21 @@ ros/console.h
 /opt/ros/melodic/include/ros/ros/console.h
 ros/static_assert.h
 /opt/ros/melodic/include/ros/ros/static_assert.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/platform.h
 -
 stdlib.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/builtin_message_traits.h
+message_traits.h
+/opt/ros/kinetic/include/ros/message_traits.h
+ros/time.h
+/opt/ros/kinetic/include/ros/ros/time.h
+
+/opt/ros/kinetic/include/ros/common.h
+=======
 /opt/ros/melodic/include/ros/builtin_message_traits.h
 message_traits.h
 /opt/ros/melodic/include/ros/message_traits.h
@@ -493,6 +658,7 @@ ros/time.h
 /opt/ros/melodic/include/ros/ros/time.h
 
 /opt/ros/melodic/include/ros/common.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 stdint.h
 -
 assert.h
@@ -502,19 +668,33 @@ stddef.h
 string
 -
 ros/assert.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/ros/assert.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/serialized_message.h
+/opt/ros/kinetic/include/ros/ros/serialized_message.h
+=======
 /opt/ros/melodic/include/ros/ros/assert.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
 ros/serialized_message.h
 /opt/ros/melodic/include/ros/ros/serialized_message.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/shared_array.hpp
 -
 ros/macros.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/console.h
+console_backend.h
+/opt/ros/kinetic/include/ros/console_backend.h
+=======
 /opt/ros/melodic/include/ros/console.h
 console_backend.h
 /opt/ros/melodic/include/ros/console_backend.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 cstdio
 -
 sstream
@@ -530,6 +710,19 @@ map
 vector
 -
 log4cxx/level.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/log4cxx/level.h
+rosconsole/macros_generated.h
+/opt/ros/kinetic/include/ros/rosconsole/macros_generated.h
+
+/opt/ros/kinetic/include/ros/console_backend.h
+
+/opt/ros/kinetic/include/ros/cpp_common_decl.h
+ros/macros.h
+-
+
+/opt/ros/kinetic/include/ros/datatypes.h
+=======
 /opt/ros/melodic/include/ros/log4cxx/level.h
 rosconsole/macros_generated.h
 /opt/ros/melodic/include/ros/rosconsole/macros_generated.h
@@ -543,6 +736,7 @@ ros/macros.h
 -
 
 /opt/ros/melodic/include/ros/datatypes.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -556,7 +750,11 @@ list
 boost/shared_ptr.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/duration.h
+=======
 /opt/ros/melodic/include/ros/duration.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 iostream
 -
 math.h
@@ -568,6 +766,19 @@ climits
 stdint.h
 -
 rostime_decl.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/rostime_decl.h
+
+/opt/ros/kinetic/include/ros/exception.h
+stdexcept
+-
+
+/opt/ros/kinetic/include/ros/exceptions.h
+ros/exception.h
+-
+
+/opt/ros/kinetic/include/ros/forwards.h
+=======
 /opt/ros/melodic/include/ros/rostime_decl.h
 
 /opt/ros/melodic/include/ros/exception.h
@@ -579,6 +790,7 @@ ros/exception.h
 -
 
 /opt/ros/melodic/include/ros/forwards.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -602,16 +814,43 @@ ros/time.h
 ros/macros.h
 -
 exceptions.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/exceptions.h
+ros/datatypes.h
+/opt/ros/kinetic/include/ros/ros/datatypes.h
+
+/opt/ros/kinetic/include/ros/header.h
+=======
 /opt/ros/melodic/include/ros/exceptions.h
 ros/datatypes.h
 /opt/ros/melodic/include/ros/ros/datatypes.h
 
 /opt/ros/melodic/include/ros/header.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 stdint.h
 -
 boost/shared_array.hpp
 -
 ros/datatypes.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/ros/datatypes.h
+cpp_common_decl.h
+/opt/ros/kinetic/include/ros/cpp_common_decl.h
+
+/opt/ros/kinetic/include/ros/init.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/spinner.h
+/opt/ros/kinetic/include/ros/ros/spinner.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+
+/opt/ros/kinetic/include/ros/io.h
+string
+-
+common.h
+/opt/ros/kinetic/include/ros/common.h
+=======
 /opt/ros/melodic/include/ros/ros/datatypes.h
 cpp_common_decl.h
 /opt/ros/melodic/include/ros/cpp_common_decl.h
@@ -629,6 +868,7 @@ string
 -
 common.h
 /opt/ros/melodic/include/ros/common.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 winsock2.h
 -
 ws2tcpip.h
@@ -658,6 +898,23 @@ netinet/in.h
 netinet/tcp.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/macros.h
+
+/opt/ros/kinetic/include/ros/master.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+
+/opt/ros/kinetic/include/ros/message.h
+ros/macros.h
+/opt/ros/kinetic/include/ros/ros/macros.h
+ros/assert.h
+/opt/ros/kinetic/include/ros/ros/assert.h
+=======
 /opt/ros/melodic/include/ros/macros.h
 
 /opt/ros/melodic/include/ros/master.h
@@ -673,6 +930,7 @@ ros/macros.h
 /opt/ros/melodic/include/ros/ros/macros.h
 ros/assert.h
 /opt/ros/melodic/include/ros/ros/assert.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 string.h
@@ -684,9 +942,15 @@ boost/array.hpp
 stdint.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/message_event.h
+ros/time.h
+/opt/ros/kinetic/include/ros/ros/time.h
+=======
 /opt/ros/melodic/include/ros/message_event.h
 ros/time.h
 /opt/ros/melodic/include/ros/ros/time.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/datatypes.h
 -
 ros/message_traits.h
@@ -708,12 +972,25 @@ boost/function.hpp
 boost/make_shared.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/message_forward.h
+=======
 /opt/ros/melodic/include/ros/message_forward.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 cstddef
 -
 memory
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/message_operations.h
+ostream
+-
+
+/opt/ros/kinetic/include/ros/message_traits.h
+message_forward.h
+/opt/ros/kinetic/include/ros/message_forward.h
+=======
 /opt/ros/melodic/include/ros/message_operations.h
 ostream
 -
@@ -721,6 +998,7 @@ ostream
 /opt/ros/melodic/include/ros/message_traits.h
 message_forward.h
 /opt/ros/melodic/include/ros/message_forward.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/time.h
 -
 string
@@ -732,6 +1010,51 @@ boost/type_traits/remove_const.hpp
 boost/type_traits/remove_reference.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/names.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+
+/opt/ros/kinetic/include/ros/node_handle.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/publisher.h
+/opt/ros/kinetic/include/ros/ros/publisher.h
+ros/subscriber.h
+/opt/ros/kinetic/include/ros/ros/subscriber.h
+ros/service_server.h
+/opt/ros/kinetic/include/ros/ros/service_server.h
+ros/service_client.h
+/opt/ros/kinetic/include/ros/ros/service_client.h
+ros/timer.h
+/opt/ros/kinetic/include/ros/ros/timer.h
+ros/rate.h
+/opt/ros/kinetic/include/ros/ros/rate.h
+ros/wall_timer.h
+/opt/ros/kinetic/include/ros/ros/wall_timer.h
+ros/steady_timer.h
+/opt/ros/kinetic/include/ros/ros/steady_timer.h
+ros/advertise_options.h
+/opt/ros/kinetic/include/ros/ros/advertise_options.h
+ros/advertise_service_options.h
+/opt/ros/kinetic/include/ros/ros/advertise_service_options.h
+ros/subscribe_options.h
+/opt/ros/kinetic/include/ros/ros/subscribe_options.h
+ros/service_client_options.h
+/opt/ros/kinetic/include/ros/ros/service_client_options.h
+ros/timer_options.h
+/opt/ros/kinetic/include/ros/ros/timer_options.h
+ros/wall_timer_options.h
+/opt/ros/kinetic/include/ros/ros/wall_timer_options.h
+ros/spinner.h
+/opt/ros/kinetic/include/ros/ros/spinner.h
+ros/init.h
+/opt/ros/kinetic/include/ros/ros/init.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+=======
 /opt/ros/melodic/include/ros/names.h
 forwards.h
 /opt/ros/melodic/include/ros/forwards.h
@@ -775,11 +1098,21 @@ ros/init.h
 /opt/ros/melodic/include/ros/ros/init.h
 common.h
 /opt/ros/melodic/include/ros/common.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/bind.hpp
 -
 xmlrpcpp/XmlRpcValue.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/param.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpcValue.h
+=======
 /opt/ros/melodic/include/ros/param.h
 forwards.h
 /opt/ros/melodic/include/ros/forwards.h
@@ -787,16 +1120,25 @@ common.h
 /opt/ros/melodic/include/ros/common.h
 xmlrpcpp/XmlRpcValue.h
 /opt/ros/melodic/include/ros/xmlrpcpp/XmlRpcValue.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 vector
 -
 map
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/parameter_adapter.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/message_event.h
+/opt/ros/kinetic/include/ros/ros/message_event.h
+=======
 /opt/ros/melodic/include/ros/parameter_adapter.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
 ros/message_event.h
 /opt/ros/melodic/include/ros/ros/message_event.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/static_assert.h
 -
 boost/type_traits/add_const.hpp
@@ -806,12 +1148,27 @@ boost/type_traits/remove_const.hpp
 boost/type_traits/remove_reference.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/platform.h
+windows.h
+-
+=======
 /opt/ros/melodic/include/ros/platform.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 stdlib.h
 -
 string
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/poll_set.h
+vector
+-
+io.h
+/opt/ros/kinetic/include/ros/io.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+=======
 /opt/ros/melodic/include/ros/poll_set.h
 vector
 -
@@ -819,6 +1176,7 @@ io.h
 /opt/ros/melodic/include/ros/io.h
 common.h
 /opt/ros/melodic/include/ros/common.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/shared_ptr.hpp
 -
 boost/function.hpp
@@ -826,6 +1184,75 @@ boost/function.hpp
 boost/thread/mutex.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/publisher.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/common.h
+/opt/ros/kinetic/include/ros/ros/common.h
+ros/message.h
+/opt/ros/kinetic/include/ros/ros/message.h
+ros/serialization.h
+/opt/ros/kinetic/include/ros/ros/serialization.h
+boost/bind.hpp
+-
+
+/opt/ros/kinetic/include/ros/rate.h
+ros/time.h
+/opt/ros/kinetic/include/ros/ros/time.h
+rostime_decl.h
+/opt/ros/kinetic/include/ros/rostime_decl.h
+
+/opt/ros/kinetic/include/ros/ros.h
+ros/time.h
+/opt/ros/kinetic/include/ros/ros/time.h
+ros/rate.h
+/opt/ros/kinetic/include/ros/ros/rate.h
+ros/console.h
+/opt/ros/kinetic/include/ros/ros/console.h
+ros/assert.h
+/opt/ros/kinetic/include/ros/ros/assert.h
+ros/common.h
+/opt/ros/kinetic/include/ros/ros/common.h
+ros/types.h
+/opt/ros/kinetic/include/ros/ros/types.h
+ros/node_handle.h
+/opt/ros/kinetic/include/ros/ros/node_handle.h
+ros/publisher.h
+/opt/ros/kinetic/include/ros/ros/publisher.h
+ros/single_subscriber_publisher.h
+/opt/ros/kinetic/include/ros/ros/single_subscriber_publisher.h
+ros/service_server.h
+/opt/ros/kinetic/include/ros/ros/service_server.h
+ros/subscriber.h
+/opt/ros/kinetic/include/ros/ros/subscriber.h
+ros/service.h
+/opt/ros/kinetic/include/ros/ros/service.h
+ros/init.h
+/opt/ros/kinetic/include/ros/ros/init.h
+ros/master.h
+/opt/ros/kinetic/include/ros/ros/master.h
+ros/this_node.h
+/opt/ros/kinetic/include/ros/ros/this_node.h
+ros/param.h
+/opt/ros/kinetic/include/ros/ros/param.h
+ros/topic.h
+/opt/ros/kinetic/include/ros/ros/topic.h
+ros/names.h
+/opt/ros/kinetic/include/ros/ros/names.h
+
+/opt/ros/kinetic/include/ros/roscpp_serialization_macros.h
+ros/macros.h
+-
+
+/opt/ros/kinetic/include/ros/rostime_decl.h
+ros/macros.h
+-
+
+/opt/ros/kinetic/include/ros/serialization.h
+roscpp_serialization_macros.h
+/opt/ros/kinetic/include/ros/roscpp_serialization_macros.h
+=======
 /opt/ros/melodic/include/ros/publisher.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
@@ -893,11 +1320,23 @@ ros/macros.h
 /opt/ros/melodic/include/ros/serialization.h
 roscpp_serialization_macros.h
 /opt/ros/melodic/include/ros/roscpp_serialization_macros.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/types.h
 -
 ros/time.h
 -
 serialized_message.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/serialized_message.h
+ros/message_traits.h
+/opt/ros/kinetic/include/ros/ros/message_traits.h
+ros/builtin_message_traits.h
+/opt/ros/kinetic/include/ros/ros/builtin_message_traits.h
+ros/exception.h
+/opt/ros/kinetic/include/ros/ros/exception.h
+ros/datatypes.h
+/opt/ros/kinetic/include/ros/ros/datatypes.h
+=======
 /opt/ros/melodic/include/ros/serialized_message.h
 ros/message_traits.h
 /opt/ros/melodic/include/ros/ros/message_traits.h
@@ -907,6 +1346,7 @@ ros/exception.h
 /opt/ros/melodic/include/ros/ros/exception.h
 ros/datatypes.h
 /opt/ros/melodic/include/ros/ros/datatypes.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 vector
 -
 map
@@ -926,14 +1366,53 @@ boost/mpl/not.hpp
 cstring
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/serialized_message.h
+roscpp_serialization_macros.h
+/opt/ros/kinetic/include/ros/roscpp_serialization_macros.h
+=======
 /opt/ros/melodic/include/ros/serialized_message.h
 roscpp_serialization_macros.h
 /opt/ros/melodic/include/ros/roscpp_serialization_macros.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/shared_array.hpp
 -
 boost/shared_ptr.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/service.h
+string
+-
+ros/common.h
+/opt/ros/kinetic/include/ros/ros/common.h
+ros/message.h
+/opt/ros/kinetic/include/ros/ros/message.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/node_handle.h
+/opt/ros/kinetic/include/ros/ros/node_handle.h
+ros/service_traits.h
+/opt/ros/kinetic/include/ros/ros/service_traits.h
+ros/names.h
+/opt/ros/kinetic/include/ros/ros/names.h
+boost/shared_ptr.hpp
+-
+
+/opt/ros/kinetic/include/ros/service_callback_helper.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/common.h
+/opt/ros/kinetic/include/ros/ros/common.h
+ros/message.h
+/opt/ros/kinetic/include/ros/ros/message.h
+ros/message_traits.h
+/opt/ros/kinetic/include/ros/ros/message_traits.h
+ros/service_traits.h
+/opt/ros/kinetic/include/ros/ros/service_traits.h
+ros/serialization.h
+/opt/ros/kinetic/include/ros/ros/serialization.h
+=======
 /opt/ros/melodic/include/ros/service.h
 string
 -
@@ -965,11 +1444,39 @@ ros/service_traits.h
 /opt/ros/melodic/include/ros/ros/service_traits.h
 ros/serialization.h
 /opt/ros/melodic/include/ros/ros/serialization.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/type_traits/is_base_of.hpp
 -
 boost/utility/enable_if.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/service_client.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/common.h
+/opt/ros/kinetic/include/ros/ros/common.h
+ros/service_traits.h
+/opt/ros/kinetic/include/ros/ros/service_traits.h
+ros/serialization.h
+/opt/ros/kinetic/include/ros/ros/serialization.h
+
+/opt/ros/kinetic/include/ros/service_client_options.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/service_traits.h
+/opt/ros/kinetic/include/ros/ros/service_traits.h
+
+/opt/ros/kinetic/include/ros/service_server.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+
+/opt/ros/kinetic/include/ros/service_traits.h
+=======
 /opt/ros/melodic/include/ros/service_client.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
@@ -995,11 +1502,103 @@ common.h
 /opt/ros/melodic/include/ros/common.h
 
 /opt/ros/melodic/include/ros/service_traits.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/type_traits/remove_reference.hpp
 -
 boost/type_traits/remove_const.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/single_subscriber_publisher.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/serialization.h
+/opt/ros/kinetic/include/ros/ros/serialization.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+boost/utility.hpp
+-
+
+/opt/ros/kinetic/include/ros/spinner.h
+ros/types.h
+/opt/ros/kinetic/include/ros/ros/types.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+boost/shared_ptr.hpp
+-
+
+/opt/ros/kinetic/include/ros/static_assert.h
+boost/static_assert.hpp
+-
+
+/opt/ros/kinetic/include/ros/statistics.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+poll_set.h
+/opt/ros/kinetic/include/ros/poll_set.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+publisher.h
+/opt/ros/kinetic/include/ros/publisher.h
+ros/time.h
+-
+ros/subscription_callback_helper.h
+/opt/ros/kinetic/include/ros/ros/subscription_callback_helper.h
+map
+-
+
+/opt/ros/kinetic/include/ros/steady_timer.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+steady_timer_options.h
+/opt/ros/kinetic/include/ros/steady_timer_options.h
+
+/opt/ros/kinetic/include/ros/steady_timer_options.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+
+/opt/ros/kinetic/include/ros/subscribe_options.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/transport_hints.h
+/opt/ros/kinetic/include/ros/ros/transport_hints.h
+ros/message_traits.h
+/opt/ros/kinetic/include/ros/ros/message_traits.h
+subscription_callback_helper.h
+/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+
+/opt/ros/kinetic/include/ros/subscriber.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/subscription_callback_helper.h
+/opt/ros/kinetic/include/ros/ros/subscription_callback_helper.h
+
+/opt/ros/kinetic/include/ros/subscription.h
+queue
+-
+ros/common.h
+/opt/ros/kinetic/include/ros/ros/common.h
+ros/header.h
+/opt/ros/kinetic/include/ros/ros/header.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/transport_hints.h
+/opt/ros/kinetic/include/ros/ros/transport_hints.h
+ros/xmlrpc_manager.h
+/opt/ros/kinetic/include/ros/ros/xmlrpc_manager.h
+ros/statistics.h
+/opt/ros/kinetic/include/ros/ros/statistics.h
+xmlrpcpp/XmlRpc.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpc.h
+=======
 /opt/ros/melodic/include/ros/single_subscriber_publisher.h
 ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
@@ -1089,6 +1688,7 @@ ros/statistics.h
 /opt/ros/melodic/include/ros/ros/statistics.h
 xmlrpcpp/XmlRpc.h
 /opt/ros/melodic/include/ros/xmlrpcpp/XmlRpc.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/thread.hpp
 -
 boost/shared_ptr.hpp
@@ -1096,6 +1696,25 @@ boost/shared_ptr.hpp
 boost/enable_shared_from_this.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/subscription_callback_helper.h
+typeinfo
+-
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+ros/parameter_adapter.h
+/opt/ros/kinetic/include/ros/ros/parameter_adapter.h
+ros/message_traits.h
+/opt/ros/kinetic/include/ros/ros/message_traits.h
+ros/builtin_message_traits.h
+/opt/ros/kinetic/include/ros/ros/builtin_message_traits.h
+ros/serialization.h
+/opt/ros/kinetic/include/ros/ros/serialization.h
+ros/message_event.h
+/opt/ros/kinetic/include/ros/ros/message_event.h
+=======
 /opt/ros/melodic/include/ros/subscription_callback_helper.h
 typeinfo
 -
@@ -1113,6 +1732,7 @@ ros/serialization.h
 /opt/ros/melodic/include/ros/ros/serialization.h
 ros/message_event.h
 /opt/ros/melodic/include/ros/ros/message_event.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/static_assert.h
 -
 boost/type_traits/add_const.hpp
@@ -1128,6 +1748,15 @@ boost/utility/enable_if.hpp
 boost/make_shared.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/this_node.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+
+/opt/ros/kinetic/include/ros/time.h
+=======
 /opt/ros/melodic/include/ros/this_node.h
 common.h
 /opt/ros/melodic/include/ros/common.h
@@ -1135,6 +1764,7 @@ forwards.h
 /opt/ros/melodic/include/ros/forwards.h
 
 /opt/ros/melodic/include/ros/time.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/platform.h
 -
 iostream
@@ -1144,16 +1774,75 @@ cmath
 ros/exception.h
 -
 duration.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/duration.h
+boost/math/special_functions/round.hpp
+-
+rostime_decl.h
+/opt/ros/kinetic/include/ros/rostime_decl.h
+=======
 /opt/ros/melodic/include/ros/duration.h
 boost/math/special_functions/round.hpp
 -
 rostime_decl.h
 /opt/ros/melodic/include/ros/rostime_decl.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 sys/timeb.h
 -
 sys/time.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/timer.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+timer_options.h
+/opt/ros/kinetic/include/ros/timer_options.h
+
+/opt/ros/kinetic/include/ros/timer_options.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+
+/opt/ros/kinetic/include/ros/topic.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+node_handle.h
+/opt/ros/kinetic/include/ros/node_handle.h
+boost/shared_ptr.hpp
+-
+
+/opt/ros/kinetic/include/ros/transport_hints.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+boost/lexical_cast.hpp
+-
+
+/opt/ros/kinetic/include/ros/types.h
+stdint.h
+-
+
+/opt/ros/kinetic/include/ros/wall_timer.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+forwards.h
+/opt/ros/kinetic/include/ros/forwards.h
+wall_timer_options.h
+/opt/ros/kinetic/include/ros/wall_timer_options.h
+
+/opt/ros/kinetic/include/ros/wall_timer_options.h
+common.h
+/opt/ros/kinetic/include/ros/common.h
+ros/forwards.h
+/opt/ros/kinetic/include/ros/ros/forwards.h
+
+/opt/ros/kinetic/include/ros/xmlrpc_manager.h
+=======
 /opt/ros/melodic/include/ros/timer.h
 common.h
 /opt/ros/melodic/include/ros/common.h
@@ -1203,6 +1892,7 @@ ros/forwards.h
 /opt/ros/melodic/include/ros/ros/forwards.h
 
 /opt/ros/melodic/include/ros/xmlrpc_manager.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 set
@@ -1216,6 +1906,17 @@ boost/thread/thread.hpp
 boost/enable_shared_from_this.hpp
 -
 common.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/ros/common.h
+xmlrpcpp/XmlRpc.h
+/opt/ros/kinetic/include/ros/xmlrpcpp/XmlRpc.h
+ros/time.h
+-
+
+/opt/ros/kinetic/include/rosconsole/macros_generated.h
+
+/opt/ros/kinetic/include/sensor_msgs/Imu.h
+=======
 /opt/ros/melodic/include/ros/common.h
 xmlrpcpp/XmlRpc.h
 /opt/ros/melodic/include/ros/xmlrpcpp/XmlRpc.h
@@ -1225,6 +1926,7 @@ ros/time.h
 /opt/ros/melodic/include/rosconsole/macros_generated.h
 
 /opt/ros/melodic/include/sensor_msgs/Imu.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1248,7 +1950,11 @@ geometry_msgs/Vector3.h
 geometry_msgs/Vector3.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/sensor_msgs/JointState.h
+=======
 /opt/ros/melodic/include/sensor_msgs/JointState.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1266,7 +1972,11 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/std_msgs/Float64.h
+=======
 /opt/ros/melodic/include/std_msgs/Float64.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1282,7 +1992,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/std_msgs/Header.h
+=======
 /opt/ros/melodic/include/std_msgs/Header.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1298,6 +2012,31 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf/LinearMath/Matrix3x3.h
+Vector3.h
+/opt/ros/kinetic/include/tf/LinearMath/Vector3.h
+Quaternion.h
+/opt/ros/kinetic/include/tf/LinearMath/Quaternion.h
+
+/opt/ros/kinetic/include/tf/LinearMath/MinMax.h
+
+/opt/ros/kinetic/include/tf/LinearMath/QuadWord.h
+Scalar.h
+/opt/ros/kinetic/include/tf/LinearMath/Scalar.h
+MinMax.h
+/opt/ros/kinetic/include/tf/LinearMath/MinMax.h
+altivec.h
+-
+
+/opt/ros/kinetic/include/tf/LinearMath/Quaternion.h
+Vector3.h
+/opt/ros/kinetic/include/tf/LinearMath/Vector3.h
+QuadWord.h
+/opt/ros/kinetic/include/tf/LinearMath/QuadWord.h
+
+/opt/ros/kinetic/include/tf/LinearMath/Scalar.h
+=======
 /opt/ros/melodic/include/tf/LinearMath/Matrix3x3.h
 Vector3.h
 /opt/ros/melodic/include/tf/LinearMath/Vector3.h
@@ -1325,6 +2064,7 @@ ros/macros.h
 -
 
 /opt/ros/melodic/include/tf/LinearMath/Scalar.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 math.h
 -
 stdlib.h
@@ -1346,6 +2086,19 @@ assert.h
 assert.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf/LinearMath/Transform.h
+Matrix3x3.h
+/opt/ros/kinetic/include/tf/LinearMath/Matrix3x3.h
+
+/opt/ros/kinetic/include/tf/LinearMath/Vector3.h
+Scalar.h
+/opt/ros/kinetic/include/tf/LinearMath/Scalar.h
+MinMax.h
+/opt/ros/kinetic/include/tf/LinearMath/MinMax.h
+
+/opt/ros/kinetic/include/tf/exceptions.h
+=======
 /opt/ros/melodic/include/tf/LinearMath/Transform.h
 Matrix3x3.h
 /opt/ros/melodic/include/tf/LinearMath/Matrix3x3.h
@@ -1357,12 +2110,17 @@ MinMax.h
 /opt/ros/melodic/include/tf/LinearMath/MinMax.h
 
 /opt/ros/melodic/include/tf/exceptions.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 stdexcept
 -
 tf2/exceptions.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf/tf.h
+=======
 /opt/ros/melodic/include/tf/tf.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 iostream
 -
 iomanip
@@ -1375,17 +2133,31 @@ sstream
 -
 map
 -
+<<<<<<< HEAD
+tf/exceptions.h
+-
+tf/time_cache.h
+/opt/ros/kinetic/include/tf/tf/time_cache.h
+=======
 memory
 -
 tf/exceptions.h
 -
 tf/time_cache.h
 /opt/ros/melodic/include/tf/tf/time_cache.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/unordered_map.hpp
 -
 boost/signals2.hpp
 -
 geometry_msgs/TwistStamped.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf/geometry_msgs/TwistStamped.h
+tf2_ros/buffer.h
+-
+
+/opt/ros/kinetic/include/tf/tfMessage.h
+=======
 /opt/ros/melodic/include/tf/geometry_msgs/TwistStamped.h
 tf2_ros/buffer.h
 -
@@ -1393,6 +2165,7 @@ ros/macros.h
 -
 
 /opt/ros/melodic/include/tf/tfMessage.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1410,12 +2183,69 @@ ros/message_operations.h
 geometry_msgs/TransformStamped.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf/time_cache.h
+=======
 /opt/ros/melodic/include/tf/time_cache.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 set
 -
 boost/thread/mutex.hpp
 -
 tf/transform_datatypes.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf/tf/transform_datatypes.h
+tf/exceptions.h
+/opt/ros/kinetic/include/tf/tf/exceptions.h
+tf/LinearMath/Transform.h
+/opt/ros/kinetic/include/tf/tf/LinearMath/Transform.h
+sstream
+-
+
+/opt/ros/kinetic/include/tf/transform_broadcaster.h
+tf/tf.h
+/opt/ros/kinetic/include/tf/tf/tf.h
+tf/tfMessage.h
+/opt/ros/kinetic/include/tf/tf/tfMessage.h
+tf2_ros/transform_broadcaster.h
+-
+
+/opt/ros/kinetic/include/tf/transform_datatypes.h
+string
+-
+geometry_msgs/PointStamped.h
+/opt/ros/kinetic/include/tf/geometry_msgs/PointStamped.h
+geometry_msgs/Vector3Stamped.h
+/opt/ros/kinetic/include/tf/geometry_msgs/Vector3Stamped.h
+geometry_msgs/QuaternionStamped.h
+/opt/ros/kinetic/include/tf/geometry_msgs/QuaternionStamped.h
+geometry_msgs/TransformStamped.h
+/opt/ros/kinetic/include/tf/geometry_msgs/TransformStamped.h
+geometry_msgs/PoseStamped.h
+/opt/ros/kinetic/include/tf/geometry_msgs/PoseStamped.h
+tf/LinearMath/Transform.h
+/opt/ros/kinetic/include/tf/tf/LinearMath/Transform.h
+ros/time.h
+/opt/ros/kinetic/include/tf/ros/time.h
+ros/console.h
+/opt/ros/kinetic/include/tf/ros/console.h
+
+/opt/ros/kinetic/include/tf2/LinearMath/Quaternion.h
+Vector3.h
+/opt/ros/kinetic/include/tf2/LinearMath/Vector3.h
+QuadWord.h
+/opt/ros/kinetic/include/tf2/LinearMath/QuadWord.h
+
+/opt/ros/kinetic/include/tf2/LinearMath/Vector3.h
+Scalar.h
+/opt/ros/kinetic/include/tf2/LinearMath/Scalar.h
+MinMax.h
+/opt/ros/kinetic/include/tf2/LinearMath/MinMax.h
+
+/opt/ros/kinetic/include/tf2/buffer_core.h
+transform_storage.h
+/opt/ros/kinetic/include/tf2/transform_storage.h
+=======
 /opt/ros/melodic/include/tf/tf/transform_datatypes.h
 tf/exceptions.h
 /opt/ros/melodic/include/tf/tf/exceptions.h
@@ -1467,16 +2297,25 @@ MinMax.h
 /opt/ros/melodic/include/tf2/buffer_core.h
 transform_storage.h
 /opt/ros/melodic/include/tf2/transform_storage.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/signals2.hpp
 -
 string
 -
 ros/duration.h
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2/ros/duration.h
+ros/time.h
+/opt/ros/kinetic/include/tf2/ros/time.h
+geometry_msgs/TransformStamped.h
+/opt/ros/kinetic/include/tf2/geometry_msgs/TransformStamped.h
+=======
 /opt/ros/melodic/include/tf2/ros/duration.h
 ros/time.h
 /opt/ros/melodic/include/tf2/ros/time.h
 geometry_msgs/TransformStamped.h
 /opt/ros/melodic/include/tf2/geometry_msgs/TransformStamped.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 boost/unordered_map.hpp
 -
 boost/thread/mutex.hpp
@@ -1486,7 +2325,11 @@ boost/function.hpp
 boost/shared_ptr.hpp
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2/convert.h
+=======
 /opt/ros/melodic/include/tf2/convert.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 tf2/transform_datatypes.h
 -
 tf2/exceptions.h
@@ -1496,6 +2339,21 @@ geometry_msgs/TransformStamped.h
 tf2/impl/convert.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2/exceptions.h
+stdexcept
+-
+
+/opt/ros/kinetic/include/tf2/impl/convert.h
+
+/opt/ros/kinetic/include/tf2/transform_datatypes.h
+string
+-
+ros/time.h
+/opt/ros/kinetic/include/tf2/ros/time.h
+
+/opt/ros/kinetic/include/tf2/transform_storage.h
+=======
 /opt/ros/melodic/include/tf2/exceptions.h
 stdexcept
 -
@@ -1509,6 +2367,7 @@ ros/time.h
 /opt/ros/melodic/include/tf2/ros/time.h
 
 /opt/ros/melodic/include/tf2/transform_storage.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 tf2/LinearMath/Vector3.h
 -
 tf2/LinearMath/Quaternion.h
@@ -1520,7 +2379,11 @@ ros/time.h
 ros/types.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2_msgs/FrameGraph.h
+=======
 /opt/ros/melodic/include/tf2_msgs/FrameGraph.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 ros/service_traits.h
 -
 tf2_msgs/FrameGraphRequest.h
@@ -1528,7 +2391,11 @@ tf2_msgs/FrameGraphRequest.h
 tf2_msgs/FrameGraphResponse.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2_msgs/FrameGraphRequest.h
+=======
 /opt/ros/melodic/include/tf2_msgs/FrameGraphRequest.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1544,7 +2411,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2_msgs/FrameGraphResponse.h
+=======
 /opt/ros/melodic/include/tf2_msgs/FrameGraphResponse.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 string
 -
 vector
@@ -1560,7 +2431,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2_ros/buffer.h
+=======
 /opt/ros/melodic/include/tf2_ros/buffer.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 tf2_ros/buffer_interface.h
 -
 tf2/buffer_core.h
@@ -1572,7 +2447,11 @@ ros/ros.h
 tf2/convert.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2_ros/buffer_interface.h
+=======
 /opt/ros/melodic/include/tf2_ros/buffer_interface.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 tf2/buffer_core.h
 -
 tf2/transform_datatypes.h
@@ -1586,6 +2465,59 @@ sstream
 tf2/convert.h
 -
 
+<<<<<<< HEAD
+/opt/ros/kinetic/include/tf2_ros/transform_broadcaster.h
+ros/ros.h
+/opt/ros/kinetic/include/tf2_ros/ros/ros.h
+geometry_msgs/TransformStamped.h
+/opt/ros/kinetic/include/tf2_ros/geometry_msgs/TransformStamped.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpc.h
+string
+-
+xmlrpcpp/XmlRpcClient.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcClient.h
+xmlrpcpp/XmlRpcException.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcException.h
+xmlrpcpp/XmlRpcServer.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcServer.h
+xmlrpcpp/XmlRpcServerMethod.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcServerMethod.h
+xmlrpcpp/XmlRpcValue.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcValue.h
+xmlrpcpp/XmlRpcUtil.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcUtil.h
+stdexcept
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcClient.h
+string
+-
+xmlrpcpp/XmlRpcDispatch.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDispatch.h
+xmlrpcpp/XmlRpcSource.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcSource.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
+ros/macros.h
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcDispatch.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+list
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcException.h
+string
+-
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcServer.h
+=======
 /opt/ros/melodic/include/tf2_ros/transform_broadcaster.h
 ros/ros.h
 /opt/ros/melodic/include/tf2_ros/ros/ros.h
@@ -1639,10 +2571,39 @@ xmlrpcpp/XmlRpcDecl.h
 /opt/ros/melodic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
 
 /opt/ros/melodic/include/xmlrpcpp/XmlRpcServer.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 map
 -
 string
 -
+<<<<<<< HEAD
+xmlrpcpp/XmlRpcDispatch.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDispatch.h
+xmlrpcpp/XmlRpcSource.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcSource.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcServerMethod.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+string
+-
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcSource.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcUtil.h
+string
+-
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+
+/opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
+xmlrpcpp/XmlRpcDecl.h
+/opt/ros/kinetic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+=======
 vector
 -
 poll.h
@@ -1673,6 +2634,7 @@ xmlrpcpp/XmlRpcDecl.h
 /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 xmlrpcpp/XmlRpcDecl.h
 /opt/ros/melodic/include/xmlrpcpp/xmlrpcpp/XmlRpcDecl.h
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 map
 -
 string

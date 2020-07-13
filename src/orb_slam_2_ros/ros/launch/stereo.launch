@@ -2,8 +2,13 @@
   <node name="orb_slam2_stereo" pkg="orb_slam2_ros"
       type="orb_slam2_ros_stereo" output="screen">
 
+<<<<<<< HEAD
+       <remap from="image_left/image_color_rect" to="/orb_helper/l" />
+       <remap from="image_right/image_color_rect" to="/orb_helper/r" />
+=======
        <remap from="orb_helper/l" to="/orb_helper/l" />
        <remap from="orb_helper/r" to="/orb_helper/r" />
+>>>>>>> 440f399d72eb59a337454f6471d218aab0258403
 
        <param name="publish_pointcloud" type="bool" value="true" />
        <param name="publish_pose" type="bool" value="true" />
