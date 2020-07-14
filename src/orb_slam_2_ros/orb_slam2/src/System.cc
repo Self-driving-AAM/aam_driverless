@@ -301,7 +301,8 @@ void System::Shutdown()
     mpLoopCloser->RequestFinish();
 
     // Wait until all thread have effectively stopped
-    while(!mpLocalMapper->isFinished() || !mpLoopCloser->isFinished() || mpLoopCloser->isRunningGBA())
+//|| !mpLoopCloser->isFinished() 
+    while(!mpLocalMapper->isFinished() || mpLoopCloser->isRunningGBA())
     {
         std::this_thread::sleep_for(std::chrono::microseconds(5000));
     }
