@@ -1,0 +1,2 @@
+aamfsd_description:aamfsd_gazebo:orb_slam_2_ros:robot_control:teleop_twist_keyboard_cpp
+-DCATKIN_DEVEL_PREFIX=/home/fayo/aamfsd_orb2_v0/devel -DCMAKE_INSTALL_PREFIX=/home/fayo/aamfsd_orb2_v0/install -G Unix Makefiles
