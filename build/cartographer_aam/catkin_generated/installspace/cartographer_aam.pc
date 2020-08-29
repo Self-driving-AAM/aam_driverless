@@ -1,0 +1,8 @@
+prefix=/home/fayoumi/aam_carto_ws/install
+
+Name: cartographer_aam
+Description: Description of cartographer_aam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

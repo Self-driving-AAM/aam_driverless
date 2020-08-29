@@ -1,0 +1,17 @@
+<launch>
+  <param name="/use_sim_time" value="true" />
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory /home/fayoumi/aam_carto_ws/src/cartographer_aam/config
+          -configuration_basename c1.lua"
+      output="screen">
+    <remap from="scan" to="/orb_slam2_ros/map" />
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $/home/fayoumi/aam_carto_ws/src/cartographer_aam/rviz/c1.rviz" />
+</launch>

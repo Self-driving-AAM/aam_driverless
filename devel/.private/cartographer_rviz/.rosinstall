@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/fayoumi/aam_carto_ws/devel/.private/cartographer_rviz/setup.sh

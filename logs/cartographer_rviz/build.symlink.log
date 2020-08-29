@@ -1,0 +1,4 @@
+Symlinking /home/fayoumi/aam_carto_ws/devel/lib/libcartographer_rviz.so
+Symlinking /home/fayoumi/aam_carto_ws/devel/lib/pkgconfig/cartographer_rviz.pc
+Symlinking /home/fayoumi/aam_carto_ws/devel/share/cartographer_rviz/cmake/cartographer_rvizConfig-version.cmake
+Symlinking /home/fayoumi/aam_carto_ws/devel/share/cartographer_rviz/cmake/cartographer_rvizConfig.cmake

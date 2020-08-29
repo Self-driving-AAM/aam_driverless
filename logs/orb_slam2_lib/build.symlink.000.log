@@ -1,0 +1,4 @@
+Symlinking /home/fayoumi/aam_carto_ws/devel/lib/liborb_slam2_lib.so
+Symlinking /home/fayoumi/aam_carto_ws/devel/lib/pkgconfig/orb_slam2_lib.pc
+Symlinking /home/fayoumi/aam_carto_ws/devel/share/orb_slam2_lib/cmake/orb_slam2_libConfig.cmake
+Symlinking /home/fayoumi/aam_carto_ws/devel/share/orb_slam2_lib/cmake/orb_slam2_libConfig-version.cmake

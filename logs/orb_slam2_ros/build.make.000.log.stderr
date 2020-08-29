@@ -1,0 +1,63 @@
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:5:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:[m[K In constructor ‘[01m[KROSPublisher::ROSPublisher(ORB_SLAM2::Map*, double, ros::NodeHandle)[m[K’:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:100:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KROSPublisher::pointcloud_chunks_stashed_[m[K’ will be initialized after [-Wreorder]
+     int pointcloud_chunks_stashed_;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:85:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool ROSPublisher::localization_mode_[m[K’ [-Wreorder]
+     bool localization_mode_;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:164:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ ROSPublisher::ROSPublisher(Map *map, double frequency, ros::NodeHandle nh) :
+[01;32m[K ^[m[K
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:5:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:85:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KROSPublisher::localization_mode_[m[K’ will be initialized after [-Wreorder]
+     bool localization_mode_;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:84:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint ROSPublisher::prev_closes_[m[K’ [-Wreorder]
+     int prev_closes_;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:164:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ ROSPublisher::ROSPublisher(Map *map, double frequency, ros::NodeHandle nh) :
+[01;32m[K ^[m[K
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:5:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:[m[K In constructor ‘[01m[KROSPublisher::ROSPublisher(ORB_SLAM2::Map*, double, ros::NodeHandle)[m[K’:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:100:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KROSPublisher::pointcloud_chunks_stashed_[m[K’ will be initialized after [-Wreorder]
+     int pointcloud_chunks_stashed_;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:85:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool ROSPublisher::localization_mode_[m[K’ [-Wreorder]
+     bool localization_mode_;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:164:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ ROSPublisher::ROSPublisher(Map *map, double frequency, ros::NodeHandle nh) :
+[01;32m[K ^[m[K
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:5:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:85:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KROSPublisher::localization_mode_[m[K’ will be initialized after [-Wreorder]
+     bool localization_mode_;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:84:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint ROSPublisher::prev_closes_[m[K’ [-Wreorder]
+     int prev_closes_;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:164:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ ROSPublisher::ROSPublisher(Map *map, double frequency, ros::NodeHandle nh) :
+[01;32m[K ^[m[K
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:5:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:[m[K In constructor ‘[01m[KROSPublisher::ROSPublisher(ORB_SLAM2::Map*, double, ros::NodeHandle)[m[K’:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:100:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KROSPublisher::pointcloud_chunks_stashed_[m[K’ will be initialized after [-Wreorder]
+     int pointcloud_chunks_stashed_;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:85:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool ROSPublisher::localization_mode_[m[K’ [-Wreorder]
+     bool localization_mode_;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:164:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ ROSPublisher::ROSPublisher(Map *map, double frequency, ros::NodeHandle nh) :
+[01;32m[K ^[m[K
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:5:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:85:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KROSPublisher::localization_mode_[m[K’ will be initialized after [-Wreorder]
+     bool localization_mode_;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.h:84:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint ROSPublisher::prev_closes_[m[K’ [-Wreorder]
+     int prev_closes_;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_ros/src/ROSPublisher.cpp:164:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ ROSPublisher::ROSPublisher(Map *map, double frequency, ros::NodeHandle nh) :
+[01;32m[K ^[m[K

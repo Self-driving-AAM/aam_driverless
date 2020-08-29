@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target robot_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_control_node.dir/src/robot_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/fayoumi/aam_carto_ws/devel/.private/robot_control/lib/robot_control/robot_control_node[0m
+[100%] Built target robot_control_node

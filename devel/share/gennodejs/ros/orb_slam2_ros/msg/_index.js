@@ -1,0 +1,1 @@
+/home/fayoumi/aam_carto_ws/devel/.private/orb_slam2_ros/share/gennodejs/ros/orb_slam2_ros/msg/_index.js

@@ -1,0 +1,4 @@
+Symlinking /home/fayoumi/aam_carto_ws/devel/lib/pkgconfig/robot_control.pc
+Symlinking /home/fayoumi/aam_carto_ws/devel/lib/robot_control/robot_control_node
+Symlinking /home/fayoumi/aam_carto_ws/devel/share/robot_control/cmake/robot_controlConfig-version.cmake
+Symlinking /home/fayoumi/aam_carto_ws/devel/share/robot_control/cmake/robot_controlConfig.cmake

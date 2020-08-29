@@ -1,0 +1,11 @@
+In file included from [01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_lib/src/LoopClosing.cc:21:0[m[K:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_lib/include/LoopClosing.h:[m[K In constructor ‘[01m[KORB_SLAM2::LoopClosing::LoopClosing(ORB_SLAM2::Map*, ORB_SLAM2::KeyFrameDatabase*, ORB_SLAM2::ORBVocabulary*, bool)[m[K’:
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_lib/include/LoopClosing.h:150:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM2::LoopClosing::mnFullBAIdx[m[K’ will be initialized after [-Wreorder]
+     bool mnFullBAIdx;
+[01;32m[K          ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_lib/include/LoopClosing.h:54:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint ORB_SLAM2::LoopClosing::closes[m[K’ [-Wreorder]
+     int closes;
+[01;32m[K         ^[m[K
+[01m[K/home/fayoumi/aam_carto_ws/src/ORB_SLAM2/orb_slam2_lib/src/LoopClosing.cc:39:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [-Wreorder]
+ LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):
+[01;32m[K ^[m[K

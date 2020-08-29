@@ -1,0 +1,8 @@
+prefix=/home/fayoumi/aam_carto_ws/devel/.private/orb_slam2_ros
+
+Name: orb_slam2_ros
+Description: Description of orb_slam2_ros
+Version: 0.0.0
+Cflags: -I/home/fayoumi/aam_carto_ws/devel/.private/orb_slam2_ros/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs
